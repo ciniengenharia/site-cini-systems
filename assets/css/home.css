@@ -1,0 +1,199 @@
+/* ============================================================
+   HOME
+   ============================================================ */
+
+/* ---------- capa (faixa escura) ---------- */
+.capa{padding:82px 0 90px;position:relative;border-bottom:1px solid var(--linha);}
+.capa-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;}
+.capa h1{font-size:clamp(40px,6.6vw,74px);font-weight:800;max-width:14ch;}
+.capa h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,#F0D485,var(--ouro));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.capa .lead{margin-top:26px;font-size:20px;}
+.capa .acoes{margin-top:36px;}
+.capa .pilares{margin-top:46px;padding-top:24px;border-top:1px solid var(--linha);}
+
+/* ---------- rede viva ---------- */
+.rede{width:100%;height:auto;display:block;overflow:visible;}
+.rede .anel{fill:none;stroke:var(--ouro);stroke-opacity:.10;}
+.rede .fio{fill:none;stroke:var(--linha-forte);stroke-width:1.3;stroke-opacity:.8;}
+.rede .halo{fill:var(--ouro);opacity:.08;animation:respira 4.5s ease-in-out infinite;}
+.rede .halo-2{animation-delay:1.4s;}
+.rede .halo-3{animation-delay:2.7s;}
+@keyframes respira{0%,100%{opacity:.05;}50%{opacity:.16;}}
+.rede .bolha{fill:var(--superficie);stroke:var(--linha-forte);stroke-width:1.3;}
+.rede .bolha-forte{stroke:var(--ouro-borda);}
+.rede .rot{fill:var(--texto-2);font-family:var(--dado);font-size:12px;font-weight:500;}
+.rede .rot-forte{fill:var(--ouro);}
+.rede .pulso{fill:var(--ouro);}
+
+/* ============================================================
+   CRUZAMENTO — painel escuro no miolo claro
+   ============================================================ */
+.cruz{
+  display:grid;grid-template-columns:1fr 310px;
+  border:1px solid var(--linha-forte);border-radius:8px;overflow:hidden;
+  box-shadow:var(--sombra-alta);margin-top:44px;
+}
+.cruz-mapa{padding:24px;min-width:0;}
+.cruz-mapa svg{width:100%;height:auto;display:block;}
+
+.no rect{fill:var(--superficie-2);stroke:var(--linha-forte);stroke-width:1.2;transition:stroke .35s ease,fill .35s ease;}
+.no text.n-cod{fill:var(--texto-2);font-family:var(--dado);font-size:15px;font-weight:500;transition:fill .35s ease;}
+.no text.n-lab{fill:var(--texto-3);font-family:var(--corpo);font-size:11px;}
+.no.ativo rect{stroke:var(--ouro);fill:rgba(214,176,60,.14);}
+.no.ativo text.n-cod{fill:var(--ouro);}
+
+.aresta{
+  stroke:var(--linha-forte);stroke-width:1.5;fill:none;opacity:.5;
+  transition:stroke .35s ease,opacity .35s ease;
+}
+.aresta.ativo{
+  stroke:var(--ouro);opacity:1;
+  stroke-dasharray:8 6;animation:fluxo 1s linear infinite;
+}
+@keyframes fluxo{to{stroke-dashoffset:-14;}}
+
+.cruz-passos{
+  border-left:1px solid var(--linha);padding:24px;
+  background:rgba(0,0,0,.18);display:flex;flex-direction:column;
+}
+.cruz-passos .olho{display:block;margin-bottom:16px;}
+.passo-btn{
+  position:relative;display:block;width:100%;text-align:left;cursor:pointer;
+  background:none;border:0;border-top:1px solid var(--linha);
+  padding:14px 0 14px 14px;color:var(--texto-3);
+  font-family:var(--corpo);font-size:15px;transition:color .16s ease;
+}
+.passo-btn:last-of-type{border-bottom:1px solid var(--linha);}
+.passo-btn::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;
+  background:var(--ouro);transform:scaleY(0);transform-origin:top;
+  transition:transform .25s ease;
+}
+.passo-btn b{
+  display:block;font-family:var(--dado);font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;margin-bottom:4px;color:var(--texto-3);transition:color .16s ease;
+}
+.passo-btn:hover{color:var(--texto-2);}
+.passo-btn[aria-selected="true"]{color:var(--texto);}
+.passo-btn[aria-selected="true"]::before{transform:scaleY(1);}
+.passo-btn[aria-selected="true"] b{color:var(--ouro);}
+.passo-texto{margin-top:20px;font-size:15px;line-height:1.65;color:var(--texto-2);flex:1;}
+.passo-texto strong{color:var(--texto);font-weight:600;}
+
+.pergunta{
+  margin-top:38px;padding:30px 32px;border:1px solid var(--ouro-borda);
+  border-radius:6px;background:var(--ouro-fundo);
+}
+.pergunta p:first-child{
+  font-family:var(--display);font-size:clamp(21px,2.8vw,29px);font-weight:700;
+  color:var(--texto);max-width:30ch;
+}
+.pergunta p:last-child{margin-top:12px;font-size:15.5px;color:var(--texto-2);max-width:62ch;}
+
+/* ============================================================
+   PROBLEMA
+   ============================================================ */
+.tres{display:grid;grid-template-columns:repeat(3,1fr);margin-top:46px;border-top:1px solid var(--linha);}
+.tres > div{padding:28px 28px 0 0;border-right:1px solid var(--linha);}
+.tres > div:last-child{border-right:0;padding-right:0;}
+.tres > div:not(:first-child){padding-left:28px;}
+.tres h3{font-size:19px;font-weight:700;margin-bottom:9px;}
+.tres p{font-size:15.5px;color:var(--texto-2);}
+
+/* ============================================================
+   MÓDULOS
+   ============================================================ */
+.modulos{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:var(--linha);border:1px solid var(--linha);border-radius:6px;
+  overflow:hidden;margin-top:36px;box-shadow:var(--sombra);
+}
+.modulo{
+  background:var(--superficie);padding:24px;text-decoration:none;display:block;
+  position:relative;transition:background .2s ease;
+}
+.modulo::after{
+  content:"";position:absolute;left:0;top:0;height:2px;width:0;
+  background:linear-gradient(90deg,var(--ouro),rgba(201,162,39,.22));
+  transition:width .3s ease;
+}
+.modulo:hover{background:var(--superficie-2);}
+.modulo:hover::after{width:100%;}
+.modulo-topo{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:11px;}
+.modulo-cod{font-family:var(--dado);font-size:13px;font-weight:500;color:var(--ouro-txt);letter-spacing:.04em;}
+.modulo h3{font-size:17.5px;font-weight:700;margin-bottom:8px;}
+.modulo p{font-size:14.5px;color:var(--texto-2);}
+.modulo.indisponivel{cursor:default;}
+.modulo.indisponivel h3,.modulo.indisponivel p{opacity:.78;}
+.modulo.indisponivel:hover{background:var(--superficie);}
+.modulo.indisponivel:hover::after{width:0;}
+
+/* ============================================================
+   PERFIS
+   ============================================================ */
+.perfis{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:38px;}
+.perfil{
+  background:var(--superficie);border:1px solid var(--linha);border-radius:6px;padding:28px;
+  box-shadow:var(--topo-luz),var(--sombra);
+}
+.bloco-alt .perfil{background:var(--fundo);}
+.perfil h3{font-size:21px;font-weight:700;margin-bottom:11px;}
+.perfil > p{font-size:15.5px;color:var(--texto-2);}
+.perfil ul{list-style:none;margin:20px 0 0;padding:0;}
+.perfil li{
+  position:relative;padding:10px 0 10px 20px;font-size:15px;color:var(--texto-2);
+  border-top:1px solid var(--linha);
+}
+.perfil li::before{content:"";position:absolute;left:0;top:19px;width:9px;height:2px;background:var(--ouro);}
+
+/* ============================================================
+   QUEM DESENVOLVE
+   ============================================================ */
+.assina-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.assina-lista{list-style:none;margin:0;padding:0;}
+.assina-lista li{
+  padding:14px 0;border-bottom:1px solid var(--linha);
+  font-size:15.5px;color:var(--texto-2);display:flex;gap:16px;
+}
+.assina-lista li:last-child{border-bottom:0;padding-bottom:0;}
+.assina-lista li span{
+  font-family:var(--dado);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ouro-txt);flex:none;width:100px;padding-top:3px;
+}
+
+/* ============================================================
+   CHAMADA FINAL (faixa escura)
+   ============================================================ */
+.chamada{padding:88px 0;border-top:1px solid var(--linha);}
+.chamada h2{max-width:24ch;}
+.chamada .lead{margin-top:18px;}
+.chamada .acoes{margin-top:32px;}
+
+/* ============================================================
+   RESPONSIVO
+   ============================================================ */
+@media (max-width:1040px){
+  .capa-grid{grid-template-columns:1fr;gap:44px;}
+  .capa h1{max-width:18ch;}
+  .rede{max-width:520px;margin:0 auto;}
+}
+@media (max-width:980px){
+  .cruz{grid-template-columns:1fr;}
+  .cruz-passos{border-left:0;border-top:1px solid var(--linha);}
+  .assina-grid,.perfis{grid-template-columns:1fr;gap:34px;}
+  .modulos{grid-template-columns:repeat(2,1fr);}
+  .tres{grid-template-columns:1fr;}
+  .tres > div{border-right:0;border-bottom:1px solid var(--linha);padding:22px 0;}
+  .tres > div:not(:first-child){padding-left:0;}
+}
+@media (max-width:640px){
+  .capa{padding:54px 0 56px;}
+  .modulos{grid-template-columns:1fr;}
+  .pergunta{padding:24px 22px;}
+  .assina-lista li{flex-direction:column;gap:4px;}
+  .assina-lista li span{width:auto;}
+}

@@ -1,0 +1,167 @@
+/* ============================================================
+   PÁGINAS INTERNAS
+   ============================================================ */
+
+.topo-pag{padding:56px 0 46px;border-bottom:1px solid var(--linha);background:var(--superficie);}
+.topo-pag .cabeca{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:16px;}
+.topo-pag .cod{font-family:var(--dado);font-size:14px;font-weight:500;color:var(--ouro-txt);letter-spacing:.06em;}
+.topo-pag h1{font-size:clamp(30px,4.6vw,50px);font-weight:800;max-width:20ch;}
+.topo-pag .lead{margin-top:18px;}
+.topo-pag .acoes{margin-top:28px;}
+
+/* ---------- corpo em duas colunas ---------- */
+.corpo{display:grid;grid-template-columns:1fr 296px;gap:56px;align-items:start;padding:56px 0 76px;}
+
+/* ---------- texto longo ---------- */
+.texto h2{font-size:26px;font-weight:700;margin:44px 0 14px;padding-top:24px;border-top:1px solid var(--linha);}
+.texto h2:first-child{margin-top:0;padding-top:0;border-top:0;}
+.texto h3{font-size:19px;font-weight:700;margin:28px 0 8px;}
+.texto p{margin:0 0 16px;max-width:68ch;color:var(--texto-2);}
+.texto ul,.texto ol{margin:0 0 18px;padding-left:20px;max-width:68ch;color:var(--texto-2);}
+.texto li{margin-bottom:8px;}
+.texto strong{color:var(--texto);font-weight:600;}
+.texto a{color:var(--ouro-txt);text-decoration:underline;text-underline-offset:2px;}
+.texto a:hover{color:var(--texto);}
+
+.destaque{
+  border-left:2px solid var(--ouro);background:var(--ouro-fundo);
+  padding:16px 18px;margin:0 0 22px;max-width:68ch;
+}
+.destaque p{margin:0;color:var(--texto);}
+.destaque .olho{display:block;margin-bottom:6px;}
+
+/* lista de recursos */
+.recursos{list-style:none;margin:0 0 22px;padding:0;max-width:68ch;}
+.recursos li{
+  position:relative;padding:13px 0 13px 22px;border-bottom:1px solid var(--linha);
+  color:var(--texto-2);font-size:15.5px;margin:0;
+}
+.recursos li::before{content:"";position:absolute;left:0;top:21px;width:9px;height:2px;background:var(--ouro);}
+.recursos li b{color:var(--texto);font-weight:600;}
+
+/* tabela */
+.tabela-wrap{overflow-x:auto;border:1px solid var(--linha);border-radius:4px;margin-bottom:24px;}
+.tabela{width:100%;border-collapse:collapse;font-size:15px;background:var(--superficie);}
+.tabela th{
+  text-align:left;font-family:var(--dado);font-size:10.5px;font-weight:500;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ouro-txt);padding:11px 14px;border-bottom:1px solid var(--linha);
+}
+.tabela td{padding:12px 14px;border-bottom:1px solid var(--linha);vertical-align:top;color:var(--texto-2);}
+.tabela tr:last-child td{border-bottom:0;}
+.tabela td:first-child{color:var(--texto);}
+
+/* ---------- coluna lateral ---------- */
+.lateral{position:sticky;top:calc(var(--topo) + 24px);}
+.caixa{border:1px solid var(--linha);background:var(--superficie);border-radius:5px;padding:22px;margin-bottom:20px;box-shadow:var(--topo-luz),var(--sombra);}
+.caixa-ouro{border-color:var(--ouro-borda);background:var(--ouro-fundo);}
+.caixa h3{font-size:18px;font-weight:700;margin-bottom:8px;}
+.caixa p{font-size:14.5px;color:var(--texto-2);margin-bottom:16px;}
+.caixa .btn{width:100%;}
+.lista-lateral{list-style:none;margin:0;padding:0;}
+.lista-lateral li{border-bottom:1px solid var(--linha);}
+.lista-lateral li:last-child{border-bottom:0;}
+.lista-lateral a,.lista-lateral span{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:11px 0;font-size:15px;text-decoration:none;color:var(--texto-2);
+}
+.lista-lateral a:hover{color:var(--ouro-txt);}
+.lista-lateral .status{font-size:9.5px;padding:3px 7px;}
+
+/* ============================================================
+   HUB DE MÓDULOS
+   ============================================================ */
+.grupo{margin-bottom:48px;}
+.grupo-cab{display:flex;align-items:center;gap:14px;margin-bottom:20px;}
+.grupo-cab h2{font-size:22px;font-weight:700;}
+.lista-modulos{display:grid;gap:1px;background:var(--linha);border:1px solid var(--linha);border-radius:4px;overflow:hidden;}
+.item-mod{
+  background:var(--superficie);padding:22px 24px;text-decoration:none;display:grid;
+  grid-template-columns:96px 1fr auto;gap:20px;align-items:start;
+  transition:background .16s ease;
+}
+a.item-mod:hover{background:var(--superficie-2);}
+.item-mod .modulo-cod{font-family:var(--dado);font-size:14px;font-weight:500;color:var(--ouro-txt);padding-top:2px;}
+.item-mod h3{font-size:18px;font-weight:700;margin-bottom:6px;}
+.item-mod p{font-size:15px;color:var(--texto-2);}
+
+/* ============================================================
+   FORMULÁRIO DE ORÇAMENTO
+   ============================================================ */
+.form{border:1px solid var(--linha);background:var(--superficie);border-radius:5px;padding:28px;box-shadow:var(--topo-luz),var(--sombra);}
+.form fieldset{border:0;padding:0;margin:0 0 26px;}
+.form legend{
+  font-family:var(--dado);font-size:10.5px;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ouro-txt);padding:0;margin-bottom:14px;
+}
+.campo{margin-bottom:16px;}
+.campo label{
+  display:block;font-size:14px;font-weight:500;color:var(--texto-2);margin-bottom:6px;
+}
+.campo input,.campo select,.campo textarea{
+  width:100%;padding:11px 12px;border:1px solid var(--linha-forte);border-radius:3px;
+  font-family:var(--corpo);font-size:16px;color:var(--texto);background:var(--fundo);
+}
+.campo input:focus,.campo select:focus,.campo textarea:focus{
+  outline:2px solid var(--ouro);outline-offset:1px;border-color:var(--ouro);
+}
+.campo textarea{resize:vertical;min-height:96px;}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+
+/* opções em caixa */
+.opcoes{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.opcao{
+  display:flex;align-items:flex-start;gap:10px;padding:12px 14px;cursor:pointer;
+  border:1px solid var(--linha-forte);border-radius:3px;background:var(--fundo);
+  font-size:15px;color:var(--texto-2);transition:border-color .16s ease,color .16s ease;
+}
+.opcao:hover{border-color:var(--texto-3);}
+.opcao input{width:auto;margin:4px 0 0;accent-color:var(--ouro);flex:none;}
+.opcao:has(input:checked){border-color:var(--ouro);color:var(--texto);background:var(--ouro-fundo);}
+.opcao small{display:block;font-size:12.5px;color:var(--texto-3);margin-top:2px;}
+.opcoes-3{grid-template-columns:repeat(3,1fr);}
+
+.condicional[hidden]{display:none;}
+
+.aviso{
+  margin-top:16px;padding-left:12px;border-left:2px solid var(--ouro);
+  font-size:14px;line-height:1.55;color:var(--texto-2);display:none;
+}
+.aviso.visivel{display:block;}
+
+.dados{margin-top:28px;border-top:1px solid var(--linha);}
+.dados div{
+  display:flex;justify-content:space-between;gap:16px;padding:12px 0;
+  border-bottom:1px solid var(--linha);font-size:15px;color:var(--texto-2);
+}
+.dados span{
+  font-family:var(--dado);font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--texto-3);
+}
+
+/* ============================================================
+   RESPONSIVO
+   ============================================================ */
+@media (max-width:980px){
+  .corpo{grid-template-columns:1fr;gap:40px;padding:44px 0 60px;}
+  .lateral{position:static;}
+}
+@media (max-width:640px){
+  .topo-pag{padding:38px 0 32px;}
+  .texto h2{font-size:23px;}
+  .item-mod{grid-template-columns:1fr;gap:8px;}
+  .opcoes,.opcoes-3,.duo{grid-template-columns:1fr;}
+}
+
+/* ============================================================
+   BLOCO DO APLICATIVO DE CAMPO
+   ============================================================ */
+.app-campo{
+  display:grid;grid-template-columns:1fr 262px;gap:56px;align-items:center;
+  padding:56px 0 8px;
+}
+.app-campo h2{font-size:clamp(24px,3.2vw,34px);font-weight:700;max-width:18ch;margin-bottom:16px;}
+.app-campo .lead{margin-bottom:22px;}
+@media (max-width:860px){
+  .app-campo{grid-template-columns:1fr;gap:36px;justify-items:center;}
+  .app-campo > div:first-child{justify-self:stretch;}
+}

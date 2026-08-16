@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Cini Systems — Gestão de conformidade em segurança do trabalho e engenharia elétrica</title>
+<meta name="description" content="Plataforma modular por norma regulamentadora em que os módulos conversam entre si. Gestão de NR-12, análise de risco de máquinas com HRN, controle de trabalhadores autorizados da NR-10, EPI e ASO. Licença de uso por módulo.">
+
+<link rel="canonical" href="https://www.cinisystems.com.br/">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Azeret+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/home.css">
+
+<meta property="og:title" content="Cini Systems — Aqui as normas conversam entre si">
+<meta property="og:description" content="Plataforma modular de conformidade em segurança do trabalho e engenharia elétrica. Os módulos cruzam informação entre si — planilha nenhuma faz isso.">
+<meta property="og:url" content="https://www.cinisystems.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cini Systems">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://www.cinisystems.com.br/#website",
+      "url":"https://www.cinisystems.com.br/",
+      "name":"Cini Systems",
+      "inLanguage":"pt-BR",
+      "publisher":{"@id":"https://www.cinisystems.com.br/#organization"}
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://www.cinisystems.com.br/#organization",
+      "name":"Cini Systems",
+      "url":"https://www.cinisystems.com.br/",
+      "slogan":"Aqui as normas conversam entre si",
+      "email":"contato@ciniengenharia.com.br",
+      "telephone":"+55-54-99947-5010",
+      "contactPoint":[
+        {
+          "@type":"ContactPoint",
+          "contactType":"comercial",
+          "name":"Cini Engenharia — representante comercial da Cini Systems",
+          "telephone":"+55-54-99947-5010",
+          "email":"contato@ciniengenharia.com.br",
+          "areaServed":"BR",
+          "availableLanguage":["pt-BR"]
+        },
+        {
+          "@type":"ContactPoint",
+          "contactType":"comercial",
+          "telephone":"+55-51-99961-3451",
+          "email":"contato@ciniengenharia.com.br",
+          "areaServed":"BR",
+          "availableLanguage":["pt-BR"]
+        }
+      ],
+      "areaServed":{"@type":"Country","name":"Brasil"},
+      "knowsAbout":["NR-12","NR-10","NR-1","NR-6","NR-7","NR-16","NR-17","NR-35","Análise de risco de máquinas","HRN","Prontuário de instalações elétricas","Diagrama unifilar"]
+    },
+    {
+      "@type":"SoftwareApplication",
+      "@id":"https://www.cinisystems.com.br/#software",
+      "name":"Cini Systems",
+      "applicationCategory":"BusinessApplication",
+      "operatingSystem":"Web, Android",
+      "inLanguage":"pt-BR",
+      "publisher":{"@id":"https://www.cinisystems.com.br/#organization"},
+      "featureList":[
+        "Inventário de máquinas e análise de risco NR-12 com cálculo de HRN",
+        "Catálogo de riscos configurável e motor de automação de regras",
+        "Aplicativo Android para trabalho em campo com foto e gravação de voz",
+        "Geração de laudo, análise de risco e plano de ação em Word e PDF",
+        "Cruzamento de informação entre módulos de normas diferentes"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<script>document.documentElement.className+=" js";</script>
+
+<header class="nav">
+  <div class="nav-int">
+    <a class="logo" href="index.html">
+      <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <path d="M11 12 L29 12 L20 29 Z" fill="none" stroke="#C9A227" stroke-opacity=".45" stroke-width="1.6"/>
+        <circle cx="11" cy="12" r="3.4" fill="#C9A227"/>
+        <circle cx="29" cy="12" r="3.4" fill="#C9A227"/>
+        <circle cx="20" cy="29" r="3.4" fill="#E8CB6C"/>
+      </svg>
+      <span class="logo-txt"><b>Cini Systems</b><i>plataforma normativa</i></span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#cruzamento">A plataforma</a>
+      <a href="modulos/index.html">Módulos</a>
+      <a href="servicos-de-engenharia/index.html">Serviços de engenharia</a>
+      <a href="#quem-desenvolve">Quem desenvolve</a>
+    </nav>
+    <a class="btn" href="orcamento/index.html">Solicitar orçamento</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== CAPA ===== -->
+  <section class="capa escuro">
+    <div class="container capa-grid">
+
+      <div>
+        <p class="olho">Segurança do trabalho · Engenharia elétrica</p>
+        <h1>Aqui as normas <em>conversam entre si.</em></h1>
+        <p class="lead">Plataforma de gestão de conformidade organizada em módulos por norma regulamentadora. A diferença não está em ter um módulo para cada norma — está no que um módulo enxerga do outro.</p>
+        <div class="acoes">
+          <a class="btn" href="orcamento/index.html">Solicitar orçamento</a>
+          <a class="btn btn-neutro" href="#cruzamento">Ver como o cruzamento funciona</a>
+        </div>
+        <div class="pilares"><span>Projetos</span><span>Normas</span><span>Conformidade</span></div>
+      </div>
+
+      <svg class="rede" viewBox="0 0 520 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rede de normas regulamentadoras interligadas: NR-1, NR-12, NR-10, NR-7, NR-6, NR-16 e NR-17, com informação circulando entre elas.">
+        <circle class="anel" cx="255" cy="238" r="112"/>
+        <circle class="anel" cx="255" cy="238" r="176"/>
+        <circle class="anel" cx="255" cy="238" r="240"/>
+
+        <circle class="halo" cx="92" cy="168" r="52"/>
+        <circle class="halo halo-2" cx="420" cy="160" r="52"/>
+        <circle class="halo halo-3" cx="255" cy="58" r="52"/>
+
+        <path id="p1" class="fio" d="M126,168 Q255,118 386,160"/>
+        <path id="p2" class="fio" d="M420,194 Q438,272 414,317"/>
+        <path id="p3" class="fio" d="M106,348 Q180,300 218,244"/>
+        <path id="p4" class="fio" d="M284,228 Q350,204 386,168"/>
+        <path id="p5" class="fio" d="M110,137 Q160,78 221,60"/>
+        <path id="p6" class="fio" d="M398,133 Q345,80 289,60"/>
+        <path id="p7" class="fio" d="M206,417 Q130,400 86,380"/>
+        <path id="p8" class="fio" d="M250,198 L250,92"/>
+        <path id="p9" class="fio" d="M377,371 Q310,412 271,424"/>
+
+        <g class="pulsos">
+          <circle class="pulso" r="3.2"><animateMotion dur="3.4s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
+          <circle class="pulso" r="3.2"><animateMotion dur="2.6s" begin="0.7s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
+          <circle class="pulso" r="3.2"><animateMotion dur="3.9s" begin="1.3s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle>
+          <circle class="pulso" r="3.2"><animateMotion dur="2.9s" begin="0.3s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion></circle>
+          <circle class="pulso" r="3.2"><animateMotion dur="3.2s" begin="1.9s" repeatCount="indefinite"><mpath href="#p6"/></animateMotion></circle>
+          <circle class="pulso" r="3.2"><animateMotion dur="4.1s" begin="2.4s" repeatCount="indefinite"><mpath href="#p8"/></animateMotion></circle>
+        </g>
+
+        <g><circle class="bolha bolha-forte" cx="255" cy="58" r="34"/><text class="rot rot-forte" x="255" y="62" text-anchor="middle">NR-1</text></g>
+        <g><circle class="bolha bolha-forte" cx="92" cy="168" r="34"/><text class="rot rot-forte" x="92" y="172" text-anchor="middle">NR-12</text></g>
+        <g><circle class="bolha bolha-forte" cx="420" cy="160" r="34"/><text class="rot rot-forte" x="420" y="164" text-anchor="middle">NR-10</text></g>
+        <g><circle class="bolha" cx="250" cy="232" r="32"/><text class="rot" x="250" y="236" text-anchor="middle">NR-7</text></g>
+        <g><circle class="bolha" cx="72" cy="348" r="32"/><text class="rot" x="72" y="352" text-anchor="middle">NR-6</text></g>
+        <g><circle class="bolha" cx="410" cy="350" r="32"/><text class="rot" x="410" y="354" text-anchor="middle">NR-16</text></g>
+        <g><circle class="bolha" cx="238" cy="428" r="32"/><text class="rot" x="238" y="432" text-anchor="middle">NR-17</text></g>
+      </svg>
+
+    </div>
+  </section>
+
+  <!-- ===== O CRUZAMENTO ===== -->
+  <section class="bloco" id="cruzamento">
+    <div class="container" data-revela>
+      <p class="regua olho">O diferencial</p>
+      <h2>Um achado em uma norma vira alerta em outra.</h2>
+      <p class="lead">Hoje a indústria trata cada norma numa planilha separada e ninguém cruza uma com a outra. Percorra os três casos abaixo — todos acontecem em campo, toda semana.</p>
+
+      <div class="cruz escuro">
+
+        <!-- diagrama -->
+        <div class="cruz-mapa">
+          <svg viewBox="0 0 660 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama mostrando como os módulos de NR-12, NR-10, NR-6, NR-7, NR-16 e NR-1 trocam informação entre si.">
+            <defs>
+              <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="#2A3A56"/>
+              </marker>
+              <marker id="seta-ouro" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="#C9A227"/>
+              </marker>
+            </defs>
+
+            <!-- arestas -->
+            <path class="aresta" data-e="A" d="M158,167 L494,167"/>
+            <path class="aresta" data-e="B" d="M562,196 L562,282"/>
+            <path class="aresta" data-e="C" d="M158,310 C300,308 420,250 496,196"/>
+            <path class="aresta" data-e="D" d="M398,305 C452,296 486,252 504,192"/>
+            <path class="aresta" data-e="E" d="M90,140 C90,66 176,50 254,44"/>
+            <path class="aresta" data-e="F" d="M562,140 C562,66 476,50 398,44"/>
+            <path class="aresta" data-e="H" d="M326,282 L326,74"/>
+
+            <!-- nós -->
+            <g class="no" data-n="NR-1">
+              <rect x="254" y="16" width="144" height="52" rx="4"/>
+              <text class="n-cod" x="326" y="38" text-anchor="middle">NR-1</text>
+              <text class="n-lab" x="326" y="55" text-anchor="middle">inventário de riscos</text>
+            </g>
+            <g class="no" data-n="NR-12">
+              <rect x="18" y="140" width="140" height="52" rx="4"/>
+              <text class="n-cod" x="88" y="162" text-anchor="middle">NR-12</text>
+              <text class="n-lab" x="88" y="179" text-anchor="middle">máquinas</text>
+            </g>
+            <g class="no" data-n="NR-10">
+              <rect x="494" y="140" width="140" height="52" rx="4"/>
+              <text class="n-cod" x="564" y="162" text-anchor="middle">NR-10</text>
+              <text class="n-lab" x="564" y="179" text-anchor="middle">eletricidade</text>
+            </g>
+            <g class="no" data-n="NR-6">
+              <rect x="18" y="282" width="140" height="52" rx="4"/>
+              <text class="n-cod" x="88" y="304" text-anchor="middle">NR-6</text>
+              <text class="n-lab" x="88" y="321" text-anchor="middle">EPI e CA</text>
+            </g>
+            <g class="no" data-n="NR-7">
+              <rect x="258" y="282" width="140" height="52" rx="4"/>
+              <text class="n-cod" x="328" y="304" text-anchor="middle">NR-7</text>
+              <text class="n-lab" x="328" y="321" text-anchor="middle">ASO</text>
+            </g>
+            <g class="no" data-n="NR-16">
+              <rect x="494" y="282" width="140" height="52" rx="4"/>
+              <text class="n-cod" x="564" y="304" text-anchor="middle">NR-16</text>
+              <text class="n-lab" x="564" y="321" text-anchor="middle">periculosidade</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- passos -->
+        <div class="cruz-passos">
+          <span class="olho">Casos reais</span>
+
+          <div role="tablist" aria-label="Casos de cruzamento entre módulos">
+            <button class="passo-btn" role="tab" aria-selected="true" data-passo="1">
+              <b>Caso 01</b>A máquina sem seccionamento
+            </button>
+            <button class="passo-btn" role="tab" aria-selected="false" data-passo="2">
+              <b>Caso 02</b>O EPI e o exame que vencem sozinhos
+            </button>
+            <button class="passo-btn" role="tab" aria-selected="false" data-passo="3">
+              <b>Caso 03</b>Tudo consolidado no PGR
+            </button>
+          </div>
+
+          <p class="passo-texto" id="passo-texto" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>“Este eletricista pode trabalhar nesta máquina hoje?”</p>
+        <p>É a pergunta que a plataforma responde e que nenhuma planilha responde — porque a resposta depende da máquina, do treinamento, do EPI, do exame e da norma, tudo ao mesmo tempo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== O PROBLEMA ===== -->
+  <section class="bloco bloco-alt">
+    <div class="container" data-revela>
+      <p class="regua olho">Por que isso importa</p>
+      <h2>Empresa nenhuma interrompe o trabalho irregular. Ela só não detecta.</h2>
+      <p class="lead">O erro aparece depois — na ação trabalhista de insalubridade ou periculosidade, quando o dano já está feito e não existe registro nenhum do lado da empresa. A Cini Systems muda o momento em que a empresa fica sabendo.</p>
+
+      <div class="tres">
+        <div>
+          <h3>Corrigir hoje</h3>
+          <p>O alerta aparece enquanto a correção ainda é barata: uma proteção instalada, um treinamento refeito, um EPI trocado.</p>
+        </div>
+        <div>
+          <h3>Ou discutir daqui a dois anos</h3>
+          <p>Sem registro, a empresa chega à audiência sem nada para mostrar. O ônus de provar o contrário fica com quem não anotou.</p>
+        </div>
+        <div>
+          <h3>Tamanho não protege</h3>
+          <p>Há indústrias de faturamento bilionário controlando tudo em planilhas separadas, cada consultoria entregando um arquivo solto.</p>
+        </div>
+      </div>
+
+      <div class="tela escuro" style="margin-top:44px;" role="img" aria-label="Tela da plataforma com o painel de pendências, listando itens vencidos e a vencer com a norma de origem de cada um.">
+        <div class="tela-barra">
+          <div class="tela-pontos"><i></i><i></i><i></i></div>
+          <div class="tela-titulo">painel de conformidade — planta industrial · 148 máquinas · 62 trabalhadores</div>
+        </div>
+        <div class="tela-corpo">
+          <div class="tela-menu">
+            <span class="on">Pendências</span>
+            <span>Máquinas</span>
+            <span>Trabalhadores</span>
+            <span>Plano de ação</span>
+            <span>Documentos</span>
+          </div>
+          <div class="tela-main">
+            <p class="tela-h">O que precisa de atenção</p>
+            <p class="tela-sub">7 itens · 3 vencidos · origem cruzada entre módulos</p>
+            <table class="tela-tab">
+              <thead>
+                <tr><th>Item</th><th>Origem</th><th class="n">Prazo</th><th>Situação</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Prensa 04 — sem seccionamento</td><td>NR-12 → NR-10</td><td class="n">15/09</td><td><span class="selo selo-risco">bloqueia manutenção</span></td></tr>
+                <tr><td>Luva isolante — CA expirado</td><td>NR-6 → NR-10</td><td class="n">vencido</td><td><span class="selo selo-risco">vencido</span></td></tr>
+                <tr><td>ASO — J. Ferreira</td><td>NR-7 → NR-10</td><td class="n">02/09</td><td><span class="selo selo-atencao">vence em 17 dias</span></td></tr>
+                <tr><td>Torno 11 — risco residual alto</td><td>NR-12</td><td class="n">30/09</td><td><span class="selo selo-atencao">HRN 180</span></td></tr>
+                <tr><td>Reciclagem NR-10 — turma B</td><td>NR-10</td><td class="n">concluído</td><td><span class="selo selo-ok">em dia</span></td></tr>
+              </tbody>
+            </table>
+            <p class="citacao">A coluna de origem mostra qual módulo levantou o achado e qual módulo foi afetado por ele. Um item pode nascer na análise de máquina e vencer do lado elétrico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MÓDULOS ===== -->
+  <section class="bloco" id="modulos">
+    <div class="container" data-revela>
+      <p class="regua olho">Módulos</p>
+      <h2>Você contrata os módulos que precisa.</h2>
+      <p class="lead">Licença de uso por módulo, com adição ou retirada na renovação. A licença é de quem contrata e vale para todas as empresas que ele atende.</p>
+
+      <div class="modulos">
+
+        <a class="modulo" href="modulos/nr-12/index.html">
+          <div class="modulo-topo">
+            <span class="modulo-cod">NR-12</span>
+            <span class="status status-disponivel">disponível</span>
+          </div>
+          <h3>Máquinas e equipamentos</h3>
+          <p>Inventário, análise de risco item a item com HRN inicial e residual, catálogo configurável, automação de regras, app Android em campo e geração de laudo.</p>
+        </a>
+
+        <a class="modulo" href="modulos/nr-10/index.html">
+          <div class="modulo-topo">
+            <span class="modulo-cod">NR-10</span>
+            <span class="status status-desenvolvimento">em desenvolvimento</span>
+          </div>
+          <h3>Instalações e serviços em eletricidade</h3>
+          <p>Trabalhadores autorizados, treinamentos e habilitações com validade, integrado à NR-12 e à NR-6.</p>
+        </a>
+
+        <div class="modulo indisponivel">
+          <div class="modulo-topo">
+            <span class="modulo-cod">NR-1</span>
+            <span class="status status-roteiro">no roteiro</span>
+          </div>
+          <h3>PGR e gerenciamento de riscos</h3>
+          <p>Norma guarda-chuva: onde os riscos de todos os módulos se consolidam num inventário único com plano de ação.</p>
+        </div>
+
+        <div class="modulo indisponivel">
+          <div class="modulo-topo">
+            <span class="modulo-cod">NR-6</span>
+            <span class="status status-roteiro">no roteiro</span>
+          </div>
+          <h3>Equipamento de proteção individual</h3>
+          <p>Cadastro único de EPI com CA, validade e certificado. Entrega e troca com registro biométrico, alerta de CA a vencer.</p>
+        </div>
+
+        <div class="modulo indisponivel">
+          <div class="modulo-topo">
+            <span class="modulo-cod">NR-7</span>
+            <span class="status status-roteiro">no roteiro</span>
+          </div>
+          <h3>PCMSO e ASO</h3>
+          <p>Controle de exames médicos ocupacionais e validade do ASO, com alerta de vencimento.</p>
+        </div>
+
+        <div class="modulo indisponivel">
+          <div class="modulo-topo">
+            <span class="modulo-cod">NR-17</span>
+            <span class="status status-roteiro">no roteiro</span>
+          </div>
+          <h3>Ergonomia</h3>
+          <p>Levantamento feito na mesma visita da NR-12, na mesma máquina, com o mesmo operador.</p>
+        </div>
+
+      </div>
+
+      <div style="margin-top:26px;" class="acoes">
+        <a class="btn btn-vazado" href="modulos/index.html">Ver todos os módulos, inclusive o Cini Electrical 3D</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PERFIS ===== -->
+  <section class="bloco bloco-alt">
+    <div class="container" data-revela>
+      <p class="regua olho">Para quem</p>
+      <h2>Dois usos, uma mesma licença.</h2>
+
+      <div class="perfis">
+        <div class="perfil">
+          <h3>A indústria que precisa cumprir</h3>
+          <p>Hoje resolve com planilhas dispersas e consultorias avulsas, cada uma entregando um arquivo separado que ninguém cruza depois.</p>
+          <ul>
+            <li>Fiscalização chega e a documentação está coerente entre si</li>
+            <li>Vencimento aparece antes de virar irregularidade</li>
+            <li>Registro do lado da empresa, e não só do lado de quem reclama</li>
+          </ul>
+        </div>
+
+        <div class="perfil">
+          <h3>O profissional que atende indústrias</h3>
+          <p>Engenheiro de segurança, técnico de segurança do trabalho e consultoria. Para ele a licença é ferramenta de produção.</p>
+          <ul>
+            <li>Atende várias empresas dentro da mesma licença</li>
+            <li>Não refaz o mesmo trabalho manualmente em cada cliente</li>
+            <li>Laudo, análise e plano de ação saem prontos em Word e PDF</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUEM DESENVOLVE ===== -->
+  <section class="bloco" id="quem-desenvolve">
+    <div class="container assina-grid" data-revela>
+      <div>
+        <p class="regua olho">Quem desenvolve</p>
+        <h2>Feito por quem assina a ART.</h2>
+        <p class="lead">A plataforma é desenvolvida e mantida por engenheiro eletricista e engenheiro de segurança do trabalho, com atuação real em campo, dentro de indústrias.</p>
+        <p class="lead" style="margin-top:16px;">Não é software feito por programador que leu a norma. É ferramenta feita por quem faz o laudo, assina a responsabilidade técnica e responde por ela.</p>
+      </div>
+
+      <div class="cartao">
+        <ul class="assina-lista">
+          <li><span>Formação</span>Engenharia elétrica e engenharia de segurança do trabalho</li>
+          <li><span>Atuação</span>Campo, em indústrias — laudos, projetos e responsabilidade técnica</li>
+          <li><span>Consequência</span>Cada função nasceu de um problema encontrado em planta, não de uma leitura da norma</li>
+          <li><span>Serviços</span>Elaboração de laudos, projetos elétricos e assunção de responsabilidade técnica, contratados à parte da plataforma</li>
+        </ul>
+        <div class="acoes" style="margin-top:22px;">
+          <a class="btn btn-vazado" href="servicos-de-engenharia/index.html">Serviços de engenharia</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHAMADA ===== -->
+  <section class="bloco chamada escuro">
+    <div class="container" data-revela>
+      <p class="regua olho">Orçamento</p>
+      <h2>A proposta é montada caso a caso.</h2>
+      <p class="lead">Não existe tabela de preços porque não existe cliente padrão. Conte o porte da operação, quantas máquinas ou trabalhadores estão em jogo e quais normas interessam — a proposta sai em cima disso.</p>
+      <div class="acoes">
+        <a class="btn" href="orcamento/index.html">Solicitar orçamento</a>
+        <a class="btn btn-neutro" href="modulos/nr-12/index.html">Ver o módulo disponível hoje</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape escuro">
+  <div class="container">
+    <div class="rodape-grid">
+      <div>
+        <p class="rodape-frase">Aqui as normas conversam entre si.</p>
+        <p style="font-size:15px;color:var(--texto-3);max-width:36ch;">Gestão de conformidade em segurança do trabalho e engenharia elétrica. Atendimento em todo o Brasil.</p>
+      </div>
+      <div>
+        <h4>Módulos</h4>
+        <ul>
+          <li><a href="modulos/nr-12/index.html">NR-12 — Máquinas</a></li>
+          <li><a href="modulos/nr-10/index.html">NR-10 — Eletricidade</a></li>
+          <li><a href="modulos/index.html">Todos os módulos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="servicos-de-engenharia/index.html">Laudos e projetos</a></li>
+          <li><a href="servicos-de-engenharia/index.html#art">Responsabilidade técnica</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="orcamento/index.html">Solicitar orçamento</a></li>
+          <li><a href="mailto:contato@ciniengenharia.com.br">contato@ciniengenharia.com.br</a></li>
+          <li><a href="https://wa.me/5554999475010">(54) 99947-5010 · WhatsApp</a></li>
+          <li><a href="https://wa.me/5551999613451">(51) 99961-3451 · WhatsApp</a></li>
+        </ul>
+        <p style="font-size:13px;color:var(--texto-3);margin-top:12px;max-width:30ch;">Atendimento comercial pela Cini Engenharia, representante da Cini Systems.</p>
+      </div>
+    </div>
+
+    <p class="rodape-nota">A plataforma é ferramenta de apoio ao trabalho do profissional habilitado. A responsabilidade técnica pelo laudo, projeto ou programa emitido permanece de quem assina o documento e registra a respectiva anotação de responsabilidade técnica.</p>
+
+    <div class="rodape-fim">
+      <span>© 2026 Cini Systems</span>
+      <span>Projetos · Normas · Conformidade</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.nav-toggle'),m=document.getElementById('nav-links');
+  if(b&&m)b.addEventListener('click',function(){
+    var a=m.classList.toggle('aberto');
+    b.setAttribute('aria-expanded',a?'true':'false');
+  });
+})();
+
+/* movimento reduzido: desliga os pulsos da rede (SMIL não obedece a CSS) */
+(function(){
+  if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  document.querySelectorAll('animateMotion').forEach(function(a){a.remove();});
+  document.querySelectorAll('.pulso').forEach(function(c){c.remove();});
+})();
+
+/* revelação por rolagem */
+(function(){
+  var alvos=document.querySelectorAll('[data-revela]');
+  if(!alvos.length)return;
+  if(!('IntersectionObserver' in window)){
+    alvos.forEach(function(e){e.classList.add('revelado');});
+    return;
+  }
+  var obs=new IntersectionObserver(function(ent){
+    ent.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('revelado'); obs.unobserve(e.target); }
+    });
+  },{rootMargin:'0px 0px -12% 0px',threshold:.06});
+  alvos.forEach(function(e){obs.observe(e);});
+})();
+
+(function(){
+  var CASOS={
+    '1':{
+      nos:['NR-12','NR-10','NR-16'],
+      arestas:['A','B'],
+      texto:'A análise de risco da NR-12 registra que a máquina <strong>não tem chave de seccionamento</strong>. O módulo de NR-10 recebe o alerta na hora — sem seccionamento o eletricista não tem como bloquear a energia para fazer manutenção. E intervenção recorrente em circuito que não pode ser desligado é exatamente o tipo de situação que abre <strong>precedente de periculosidade</strong>, que é NR-16. Um único achado em campo, três normas afetadas.'
+    },
+    '2':{
+      nos:['NR-6','NR-7','NR-10'],
+      arestas:['C','D'],
+      texto:'O EPI é cadastrado <strong>uma vez</strong> na NR-6, com CA e validade. O exame ocupacional fica na NR-7. O módulo de NR-10 lê os dois cadastros. Quando o CA da luva isolante expira ou o ASO vence, o trabalhador <strong>sai da lista de autorizados</strong> antes de alguém precisar conferir. CA e ASO vencem sozinhos — o sistema avisa antes; a planilha não avisa.'
+    },
+    '3':{
+      nos:['NR-1','NR-12','NR-10','NR-7'],
+      arestas:['E','F','H'],
+      texto:'A NR-1 é a norma guarda-chuva. Cada risco levantado nos outros módulos sobe para um <strong>inventário único com plano de ação</strong>, como a norma exige — incluindo a obrigação do empregador de fiscalizar o uso do EPI. Não é relatório remontado no fim do ano: é o mesmo dado, visto de cima.'
+    }
+  };
+
+  var svg=document.querySelector('.cruz-mapa svg');
+  if(!svg)return;
+  var btns=Array.prototype.slice.call(document.querySelectorAll('.passo-btn'));
+  var alvo=document.getElementById('passo-texto');
+
+  function aplicar(id){
+    var c=CASOS[id];
+    svg.querySelectorAll('.no').forEach(function(n){
+      n.classList.toggle('ativo', c.nos.indexOf(n.dataset.n)>-1);
+    });
+    svg.querySelectorAll('.aresta').forEach(function(a){
+      a.classList.toggle('ativo', c.arestas.indexOf(a.dataset.e)>-1);
+    });
+    alvo.innerHTML=c.texto;
+    btns.forEach(function(b){ b.setAttribute('aria-selected', b.dataset.passo===id?'true':'false'); });
+  }
+
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){ aplicar(b.dataset.passo); });
+  });
+  aplicar('1');
+})();
+</script>
+</body>
+</html>

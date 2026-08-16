@@ -1,0 +1,25 @@
+COMO VER O SITE
+===============
+
+Duplo clique em index.html. So isso.
+
+Os caminhos sao relativos, igual ao site da Cini Engenharia:
+a home chama "assets/css/base.css" e uma pagina dois niveis
+abaixo chama "../../assets/css/base.css". Funciona tanto no
+duplo clique quanto no servidor.
+
+PARA PUBLICAR
+  Suba esta pasta no GitHub Pages, do mesmo jeito que voce ja
+  faz com o site da Cini Engenharia. O CNAME ja esta aqui.
+
+  As URLs publicas ficam assim:
+      cinisystems.com.br/modulos/nr-12/index.html
+  A tag canonical de cada pagina aponta para a versao curta
+      cinisystems.com.br/modulos/nr-12/
+  entao o Google indexa so uma. Se preferir a URL curta nos
+  links tambem, e so remover "index.html" dos hrefs -- mas ai
+  o duplo clique para de navegar entre paginas.
+
+ANTES DE PUBLICAR
+  ./checar-links.sh
+  Aponta qualquer link interno que nao tenha arquivo.
